@@ -2,7 +2,7 @@ import React from 'react';
 
 const ShoppingCard = ({ items }) => {
   return (
-    <div className="shopping-card">
+    <div className="shopping-bag">
       <h2>Warenkorb</h2>
       <ul>
         {items.map((item, index) => (
