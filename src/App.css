@@ -12,8 +12,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
+    align-items: flex-start; /* Obere Ausrichtung */
     padding: 20px;
+    padding-top: 80px;
     gap: 20px;
     width: 100%;
     height: auto;
@@ -24,15 +25,15 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Immer 3 Spalten */
     gap: 32px;
+    
     justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 100px;
-    align-items: center;
+    margin-bottom: 100px; 
+    /* align-items: start;  */
   }
   
   @media (max-width: 768px) {
     .product-list {
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Dynamisches Layout für kleinere Bildschirme */
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Layout für kleinere Bildschirme */
     }
   
     .shopping-card {
@@ -48,12 +49,15 @@ body {
   .shopping-card {
     flex: 1;
     background-color: #fff;
-    padding: 20px;
+    padding: 40px; 
+    padding-top: 80px;
+    height: auto; /* Optional: feste Höhe anpassen, z. B. height: 400px */
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+    align-self: flex-start;
   }
   
   .product {
@@ -66,6 +70,7 @@ body {
     padding: 10px;
     background-color: white;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    
   }
   
   .product img {
