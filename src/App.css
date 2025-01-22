@@ -10,7 +10,7 @@ body {
   
   .main-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: flex-start; /* Obere Ausrichtung */
     padding: 20px;
@@ -28,7 +28,7 @@ body {
     
     justify-content: center;
     margin-bottom: 100px; 
-    /* align-items: start;  */
+  
   }
   
   @media (max-width: 768px) {
@@ -41,9 +41,15 @@ body {
     }
   }
   
-  .product-pizza:hover, .product-sushi:hover, .product-burger:hover .product-bowl:hover{
-    transform: scale(1.1);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  .product-pizza:hover, 
+  .product-sushi:hover, 
+  .product-burger:hover,
+  .product-Bowls:hover, 
+  .product-salad:hover,
+  .product-fries:hover {
+  
+      transform: scale(1.1);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
   .shopping-bag {
@@ -54,10 +60,11 @@ body {
     height: auto; 
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
+    display: block;
     flex-direction: column;
     box-sizing: border-box;
     align-self: flex-start;
+    position: sticky;
   }
   
   .product {

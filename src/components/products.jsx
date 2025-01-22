@@ -34,19 +34,19 @@ const products = [
     },
     {
         id: 3,
-        name: 'Burger',
+        name: 'Salad',
         price: 12,
-        image: '/assets/img/burger.jpg',
-        description: 'Saftiger Burger mit allen Extras',
-        className: 'product-burger',
+        image: '/assets/img/salad.jpg',
+        description: 'Knackige Salate mit unseren hausgemachten Dressings',
+        className: 'product-salad',
       },
     {
         id: 6, 
-        name: '...',
+        name: 'Pommes',
         price: 14, 
-        image: '',
-        description:'',
-        className: ''
+        image: '/assets/img/fries.jpg',
+        description:'Für unsere kleinen Gäste ',
+        className: 'product-fries'
     },
    
   ];
