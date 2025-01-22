@@ -3,5 +3,10 @@
     "configLevel": "project",
     "useProfile": true,
     "profileName": "Felix"
+  },
+  "new": {
+    "configLevel": "project",
+    "useProfile": false,
+    "awsConfigFilePath": "/Users/lienslex/.amplify/awscloudformation/nmGIN4XJrd"
   }
 }
